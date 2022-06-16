@@ -8,8 +8,7 @@ t2 = tuple(' world')
 t3 = t1 + t2
 print(len(t3))
 
-if 'e' in t3:
-    print('YES')
+if 'l' in t3:
+    print(t3.index('l'))
 else:
     print('NO')
-    
