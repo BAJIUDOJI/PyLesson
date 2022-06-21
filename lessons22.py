@@ -60,3 +60,6 @@ s = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 
 a = frozenset('hello')
 print(a)
+
+for i in s:
+    print(i)
