@@ -42,7 +42,11 @@ product2 = dict(title='iphone', price=400)
 #     print(key, value)
 
 
-products = [{'title': 'Sony', 'price': 100}, {'title': 'iphone', 'price': 110}, {'title': 'Samsung', 'price': 90}]
+products = [
+    {'title': 'Sony', 'price': 100},
+    {'title': 'iphone', 'price': 110},
+    {'title': 'Samsung', 'price': 90}
+]
 print(products)
 
 for product in products:
