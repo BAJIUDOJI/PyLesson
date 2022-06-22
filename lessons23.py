@@ -1,5 +1,6 @@
 # Словари dictionary
 
+
 # d = {}
 # product1 = {'title': 'Sony',
 #             'price': 100}
