@@ -253,5 +253,155 @@
 #     print(*nul[i])
 
 
-x = {'name': 'John', 'age': 36}
-print(type(x))
+# ----less 3.1----
+
+# def f(n):
+#     return n * 10 + 5
+#
+# print(f(f(f(10))))
+
+
+# def f(x):
+#     if x <= -2:
+#         f = 1 - (x + 2) ** 2
+#     elif -2 < x <= 2:
+#         f = -(x / 2)
+#     elif x > 2:
+#         f = (x - 2) ** 2 + 1
+#     return f
+
+
+# def modify_list(l):
+#     le = len(l) - 1
+#     i = le
+#     while i != -1:
+#         if l[i] % 2:
+#             del l[i]
+#         else:
+#             l[i] = l[i] // 2
+#         i -= 1
+#     return
+
+
+# ----less 3.2----
+
+# def update_dictionary(d, key, value):
+#     if key in d:
+#         d[key].append(value)
+#         # print('ключ есть')
+#     elif key is not d:
+#         # d[2 * key] = []
+#         if 2 * key is d:
+#             d[2 * key].append(value)
+#             # print('ключ 2*key уже есть')
+#         elif (2 * key is not d) and d.get(2 * key) == None:
+#             d[2 * key] = []
+#             d[2 * key].append(value)
+#             # print('создание ключа и + новое значение списка')
+#         elif (2 * key is not d) and d.get(2 * key) != None:
+#             d[2 * key].append(value)
+#             # print('создание ключа и + значение списка')
+#     return
+
+
+# n = ''  # инициализация строки
+# n = str(input())
+# m = []  # инициализация списка
+# m.append([str(s.lower()) for s in n.split()])
+# d = {}  # инициализация пустого словаря
+# li, lj = len(m), len(m[0])
+# for i in range(li):
+#     for j in range(lj):
+#         p = m[i][j]
+#         if p in d:
+#             d[p] += 1
+#         else:
+#             d[p] = 1
+# for key, value in d.items():
+#     print(key, value)
+
+
+# d = {}
+# for _ in range(int(input())):
+#     x = int(input())
+#     if x not in d:
+#         d[x] = f(x)
+#     print(d[x])
+
+# ----less 3.3----
+
+# a = int(input())
+# b = int(input())
+# print(a + b)
+
+
+# ----less 3.4----
+
+# Чтение из файла
+# with open('text.txt') as inf:
+#     s1 = inf.readline()
+#     s2 = inf.readline()
+#
+# # Запись в файл
+# with open('text.txt, w') as ouf:
+#     ouf.write('Some text\n')
+#     ouf.write(str(25))
+
+
+# with open('dataset_3363_2.txt') as t:
+#     s = t.readline().strip()
+#
+#
+# def rep(symbol, iter): return symbol * int(iter)
+#
+#
+# i = 0
+# while i < len(s):
+#     iter = ''
+#     if s[i].isalpha():
+#         symbol = s[i]
+#         i += 1
+#         while s[i].isdigit():
+#             iter += s[i]
+#             if i == len(s) - 1:
+#                 break
+#             i += 1
+#         print(rep(symbol, iter), end='')
+
+
+# with open('dataset_3363_3.txt') as inf, open('MostPopularWord.txt', 'w') as ouf:
+#     maxc = 0
+#     s = inf.read().lower().strip().split()
+#     s.sort()
+#     for word in s:
+#         counter = s.count(word)
+#         if counter > maxc:
+#             maxc = counter
+#             result_word = word
+#     ouf.write(result_word + ' ' + str(maxc))
+
+
+# count, a1, b1, c1 = 0, 0, 0, 0
+# with open('dataset_3363_4.txt', 'r') as inf:
+#     for line in inf:
+#         line = line.strip().split(';')
+#         a, b, c = int(line[1]), int(line[2]), int(line[3])
+#         print((a+b+c)/3)
+#         count += 1
+#         a1 += a
+#         b1 += b
+#         c1 += c
+# print((a1/count), (b1/count), (c1/count))
+
+
+# ----less 3.5----
+
+# import math
+# a = float(input())
+# from math import pi
+# print(2*pi*a)
+
+
+import sys
+for i in sys.argv[1:]:
+    print(i, end=" ")
