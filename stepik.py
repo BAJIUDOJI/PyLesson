@@ -1,3 +1,6 @@
+import requests
+
+
 # ----less 2.4----
 
 # s = 'abcdefghijk'
@@ -402,6 +405,3 @@
 # print(2*pi*a)
 
 
-import sys
-for i in sys.argv[1:]:
-    print(i, end=" ")
